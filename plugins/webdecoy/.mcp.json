@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "webdecoy": {
+      "type": "http",
+      "url": "https://mcp.webdecoy.com/mcp",
+      "oauth": {
+        "clientId": "gvThhiQXQQest8ZQY3H5olz9FhPnHZtK",
+        "callbackPort": 8765
+      }
+    }
+  }
+}
