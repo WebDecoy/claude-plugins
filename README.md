@@ -56,9 +56,13 @@ Under the advanced OAuth settings, choose dynamic client registration.
 | `get_install_status` | Whether the install is reporting, plus a test request |
 | `create_script_tag` | Create a site's detection script (needs setup permission) |
 | `verify_install` | Check your own page serves the WebDecoy tag (needs setup permission) |
+| `list_decoys` | The decoys on a site and their URLs |
+| `create_decoy` | Create a decoy and get the code to hide it in your site (needs setup permission) |
+| `create_site` | Add a new site, if you own the organization (needs setup permission) |
 
-The assistant reads by default. The two setup tools need you to tick **Also
-allow setup** when you approve it. It can never change your policies,
+The assistant reads by default. The setup tools need you to tick **Also
+allow setup** when you approve it; sites and decoys it creates count toward
+your plan, and a site it adds joins only that assistant's access. It can never change your policies,
 enforcement, settings or billing, and it never receives secret keys: install
 guides name the environment variables and you set them yourself.
 

@@ -53,6 +53,20 @@ If the guide needs the script tag and `public_ids.scanner_id` is empty, call
 message, which says how to grant it. Put the tag in the shared layout's
 `<head>` so every page loads it.
 
+## Adding a site or decoys
+
+If the user's site is not in `list_properties` and they want it added, call
+`create_site` with its address (setup permission; only the organization's
+owner can add sites). Never create a site the user did not ask for.
+
+To add decoys, call `create_decoy` with a path that looks valuable to a bot
+(for example `/backup.zip`, `/admin/export`, or for an API an
+internal-looking route with `type: endpoint`). Put the returned embed code
+exactly where its `where` says: in the shared layout for a hidden link, or an
+internal-looking API reference for an endpoint decoy. Never place a decoy
+where people would see or click it. `list_decoys` shows what already exists;
+do not create duplicates.
+
 ## 5. Prove it works
 
 Do not report success from edits alone.
