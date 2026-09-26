@@ -13,7 +13,7 @@
       "name": "webdecoy",
       "source": "./plugins/webdecoy",
       "description": "Install WebDecoy into your app and ask about your sites' bot traffic and protection, through WebDecoy's hosted MCP server.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": { "name": "WebDecoy", "url": "https://webdecoy.com" },
       "homepage": "https://docs.webdecoy.com",
       "license": "MIT",
