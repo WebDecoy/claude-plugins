@@ -1,11 +1,24 @@
 {
   "name": "webdecoy",
+  "displayName": "WebDecoy",
   "description": "Install WebDecoy into your app and ask about your sites' bot traffic and protection, through WebDecoy's hosted MCP server.",
   "version": "0.2.0",
-  "author": { "name": "WebDecoy", "url": "https://webdecoy.com" },
+  "author": {
+    "name": "WebDecoy",
+    "url": "https://webdecoy.com"
+  },
   "homepage": "https://docs.webdecoy.com",
   "privacyPolicyUrl": "https://webdecoy.com/privacy/",
   "icon": ".claude-plugin/icon.png",
   "license": "MIT",
-  "keywords": ["webdecoy", "bot detection", "security", "mcp"]
+  "keywords": [
+    "webdecoy",
+    "bot detection",
+    "security",
+    "mcp"
+  ],
+  "repository": "https://github.com/WebDecoy/claude-plugins",
+  "documentationUrl": "https://docs.webdecoy.com/installation/ai-assistants/",
+  "supportUrl": "https://webdecoy.com/contact/",
+  "termsOfServiceUrl": "https://webdecoy.com/terms/"
 }
