@@ -50,6 +50,8 @@ Under the advanced OAuth settings, choose dynamic client registration.
 | `list_properties` | The sites you approved for this assistant |
 | `get_protection_status` | Whether a site is actually protected, and why not |
 | `search_detections` | Bot detections on a site, filterable by time and score |
+| `search_correlation_findings` | Recurring bot activity and related detections on an approved site |
+| `get_correlation_finding` | The evidence tier, identity basis, coverage, and dashboard link for a finding |
 | `get_actor_evidence` | What one actor did across a site |
 | `get_current_policy` | What the site's policy is configured to do |
 | `get_install_guide` | Install steps for your stack, with your public IDs filled in |
@@ -65,6 +67,22 @@ allow setup** when you approve it; sites and decoys it creates count toward
 your plan, and a site it adds joins only that assistant's access. It can never change your policies,
 enforcement, settings or billing, and it never receives secret keys: install
 guides name the environment variables and you set them yourself.
+
+## Investigate a bot campaign
+
+After connecting, pick an approved site and try this prompt:
+
+```text
+Using WebDecoy, find recurring correlation findings from the last seven days
+for my site. For each finding, show what links the requests, whether coverage
+is complete, any recorded outcome, and the dashboard link. Label controlled
+tests separately.
+```
+
+The [production walkthrough](https://webdecoy.com/blog/investigate-bot-campaigns-webdecoy-mcp/?utm_source=github&utm_medium=referral&utm_campaign=mcp_correlation_investigation)
+shows how to interpret those fields. One finding linked 24 observed requests
+across five CMS families and marked coverage incomplete, so the count is a
+minimum for the campaign.
 
 ## Links
 
